@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "TartlersEnd";
+  src: local("TartlersEnd"), url("./fonts/TartlersEnd.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "TartlersEnd";
+    src: local("TartlersEnd"), url("./fonts/TartlersEnd.ttf") format("ttf");
+  }

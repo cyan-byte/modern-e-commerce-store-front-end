@@ -1,38 +1,271 @@
 .App {
+  font-family: "Pridi-Regular", serif;
+}
+
+.navbar {
+  background-color: #fff8e1;
+  border-bottom: solid 0.5px #000000;
+  position: fixed;
+  width: 100%;
+  height: 12vh;
+  z-index: 100;
+}
+
+.logo {
+  opacity: 0; /* Initially hide the logo */
+  transition: opacity 0.3s ease;
+}
+
+.show-logo .logo {
+  opacity: 1; /* Show the logo when scrolled */
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+.giant-logo {
+  margin-top: 56px;
+  padding: 0;
+  width: 100%;
+}
+
+/* Home Product Row */
+.home-product-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 50vh;
+}
+
+.product-home {
+  border-right: solid 0.5px #000000;
+  border-bottom: solid 0.5px #000000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-right: 20px;
+  width: 30vw;
+}
+
+.product-home-image-and-price {
+  display: flex;
+  font-family: "TartlersEnd";
+}
+
+.product-home-image {
+  margin-top: -32px;
+  padding-left: 40px;
+}
+
+.product-home-price {
+  font-size: 2.4rem;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 80px;
+}
+
+.product-home-title {
+  font-size: 1.2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.clayday-section {
+  display: flex;
+  width: 100vw;
+  height: 88vh;
+  border-bottom: solid 0.5px #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.clayday-left {
+  width: fill;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.clayday-right {
+  border-left: solid 0.5px #000000;
+}
+
+.clayday-top {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #fff8e1;
+  height: 44vh;
+  border-bottom: solid 0.5px #000000;
 }
 
-.App-link {
-  color: #61dafb;
+.clayday-top p {
+  max-width: 300px;
+  font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clayday-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff8e1;
+  height: 44vh;
+  border-bottom: solid 0.5px #000000;
+}
+
+.rali-vase-section {
+  display: flex;
+  border-bottom: solid 0.5px #000000;
+}
+
+.rali-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+}
+
+.rali-left {
+  border-right: solid 0.5px #000000;
+  height: 88vh;
+}
+.rali-top {
+  font-size: 1rem;
+  max-width: 400px;
+}
+
+.rali-bottom {
+  font-size: 1.1rem;
+}
+
+.blue-see-products-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+  width: 100vw;
+  height: 88vh;
+  background-color: #c7d1d6;
+  border-bottom: solid 0.5px #000000;
+}
+
+.blue-section-button {
+  background-color: #f4f66d;
+  color: #000000;
+  border: 0.5px solid #000000;
+  padding: 10px 24px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: #f4f66d;
+  border: 0.5px solid #000000;
+  padding: 16px 32px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.craftlife-row {
+  display: flex;
+  width: 100vw;
+  border-bottom: solid 0.5px #000000;
+}
+.craftlife {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 700;
+  background-color: #dbd0d4;
+  width: fill;
+  height: 88vh;
+  border-right: solid 0.5px #000000;
+}
+
+.artisan-home-image1 {
+  border-right: solid 0.5px #000000;
+}
+.home-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer */
+.footer {
+  display: grid;
+  background-color: #000000;
+  color: #fff8e1;
+  width: 100vw;
+}
+
+.footer-navbar-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* PRODUCTS */
+
+.products-header {
+  display: flex;
+  justify-content: center;
+}
+
+.product-cat {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.sculptures-product-cat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+.products-text-image {
+  margin-top: 88px;
+}
+
+.products-row1 {
+  display: flex;
+}
+
+.products-row2 {
+  display: flex;
+}
+
+.product-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33vw;
+  align-items: center;
+  border: solid 0.5px #000000;
+}
+
+.product-block button {
+  width: 200px;
+}
+
+.product-image-and-price {
+  display: flex;
+}
+
+.product-price {
+  font-size: 2rem;
+  margin-top: 180px;
+}
+
+.product-title {
+  font-size: 1rem;
+  text-align: center;
 }
