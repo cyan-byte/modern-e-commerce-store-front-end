@@ -3,6 +3,7 @@ import axios from "axios";
 import NavBar from "./NavBar";
 import ProductsHeader from "./ProductsHeader";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -35,7 +36,12 @@ function Products() {
           </li>
           <li className="product-block">
             <div className="product-image-and-price">
-              <img src="pexels-vlada-karpovich-7902913.png" />
+              {/* <Link to="/products">
+          <div className="blue-section-button">see our products</div>
+        </Link> */}
+              <Link to="/product-listing">
+                <img src="pexels-vlada-karpovich-7902913.png" />
+              </Link>
               <p className="product-price">$72</p>
             </div>
             <p className="product-title">mammoth vase</p>
@@ -81,7 +87,7 @@ function Products() {
           </li>
         </ul>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

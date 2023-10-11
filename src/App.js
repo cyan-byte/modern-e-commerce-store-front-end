@@ -7,6 +7,7 @@ import ArtisanBios from "./components/ArtisanBios";
 import Cart from "./components/Cart";
 import "./App.css";
 import ProductListing from "./components/ProductListing";
+import ProductDetail from "./components/ProductDetail";
 import Footer from "./components/Footer";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/artisanbios" element={<ArtisanBios/>} />
           <Route path="/cart" element={<Cart/>} />
           <Route path="/product-listing" element = {<ProductListing/>} />
+          <Route path="/products/:productID" component={ProductDetail} />
         </Routes>
       </div>
     </Router>
