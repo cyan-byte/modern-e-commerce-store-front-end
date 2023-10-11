@@ -15,6 +15,7 @@ function Cart() {
           <CartItem />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
