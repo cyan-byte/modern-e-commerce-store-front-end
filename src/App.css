@@ -451,7 +451,7 @@ button {
 }
 
 .artisan-image {
-  height: 156vh;
+  height: 108vh;
   border-left: solid 0.5px #000000;
 }
 
@@ -473,9 +473,13 @@ button {
   align-items: center;
   font-size: 1rem;
   height: 32vh;
+  gap: 88px;
   background-color: #c7d1d6;
 }
 
+.artisan-para1 p {
+  max-width: 500px;
+}
 .heart {
   font-weight: 600;
 }
@@ -507,7 +511,12 @@ button {
   align-items: center;
   font-size: 1rem;
   height: 32vh;
+  gap: 88px;
   background-color: #dbd0d4;
+}
+
+.artisan-para2 p {
+  max-width: 500px;
 }
 
 .artisan-para3 {
@@ -516,7 +525,12 @@ button {
   align-items: center;
   font-size: 1rem;
   height: 32vh;
+  gap: 88px;
   background-color: #d69585;
+}
+
+.artisan-para3 p {
+  max-width: 500px;
 }
 
 .artisan-block h2 {

@@ -14,15 +14,13 @@ export default function ArtisanBios() {
           <h2 className="artisan-left">Meet Dahlia Blue</h2>
           <img src="pexels-rfstudio-3817495.jpg" className="artisan-image" />
         </div>
-        <div className="artisan-para-quote">
-          <div className="artisan-para1">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+        <div className="artisan-para-quote artisan-para1">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
             corporis, quo neque ipsa recusandae culpa! Dolore ab vero provident
             odio quisquam consequuntur doloribus tempora minus praesentium
             iusto, obcaecati sint beatae accusamus fuga consequatur ea est.
             Perspiciatis molestiae officia, vitae error amet illo iste repellat
-            ipsa, iusto et nisi. Veritatis, aperiam!
-          </div>
+            ipsa, iusto et nisi. Veritatis, aperiam!</p>
 
           <div className="artisan-quote1">
           <p>
@@ -36,15 +34,15 @@ export default function ArtisanBios() {
         <h2 className="artisan-left">Kaji Dolovi</h2>
         <img src="pexels-rfstudio-3819794.jpg" className="artisan-image" />
       </div>
-      <div className="artisan-para-quote">
-        <div className="artisan-para2">
+      <div className="artisan-para-quote artisan-para2">
+        <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
           corporis, quo neque ipsa recusandae culpa! Dolore ab vero provident
           odio quisquam consequuntur doloribus tempora minus praesentium iusto,
           obcaecati sint beatae accusamus fuga consequatur ea est. Perspiciatis
           molestiae officia, vitae error amet illo iste repellat ipsa, iusto et
           nisi. Veritatis, aperiam!
-        </div>
+        </p>
         <div className="artisan-quote2">
           <p>"I asked myself, 'What can be created today?'."</p>
         </div>
@@ -57,15 +55,15 @@ export default function ArtisanBios() {
           className="artisan-image"
         />
       </div>
-      <div className="artisan-para-quote">
-        <div className="artisan-para3">
+      <div className="artisan-para-quote artisan-para3">
+        <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
           corporis, quo neque ipsa recusandae culpa! Dolore ab vero provident
           odio quisquam consequuntur doloribus tempora minus praesentium iusto,
           obcaecati sint beatae accusamus fuga consequatur ea est. Perspiciatis
           molestiae officia, vitae error amet illo iste repellat ipsa, iusto et
           nisi. Veritatis, aperiam!
-        </div>
+        </p>
 
         <div className="artisan-quote3">
           <p>"It's all about the movement and the peace."</p>
