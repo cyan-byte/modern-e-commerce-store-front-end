@@ -12,7 +12,10 @@ export default function ProductListing() {
     // This fetches products from my server using axios
     async function fetchProducts() {
       try {
-        const response = await axios.get(`/api/productDetail/${productId}`); // Make an API request for a specific product
+        const response = await axios.get(
+          "https://modern-e-commerce-store.onrender.com/api/productDetail/" +
+            productId
+        );
         if (response.status === 200) {
           setProduct(response.data);
         } else {
@@ -24,6 +27,14 @@ export default function ProductListing() {
     }
     fetchProducts();
   }, [productId]);
+
+  const addToCart = () => {
+    if (product) {
+      const updatedCart = [...cart, product];
+      setCart(updatedCart);
+
+    }
+  };
 
   // displays products
   return (
@@ -49,7 +60,9 @@ export default function ProductListing() {
             <div>details +</div>
             <p>Product ID: {productId}</p>
 
-            <div className="listing-add-to-cart-button">Add to Cart</div>
+            <div className="listing-add-to-cart-button" onClick={addToCart}>
+              Add to Cart
+            </div>
           </div>
         </div>
 
