@@ -10,7 +10,11 @@ function Products() {
 
   const addToCart = (productId) => {
     // Sends a request to my server to add the product to the cart
-    axios.post("/api/cart/add-to-cart", { productId })
+    axios
+      .post(
+        "https://modern-e-commerce-store.onrender.com/api/cart/add-to-cart",
+        { productId }
+      )
       .then((response) => {
         // Handle success (e.g., show a message)
         console.log(response.data.message);
@@ -21,10 +25,9 @@ function Products() {
       });
   };
 
-
   useEffect(() => {
     axios
-      .get("https://api.example.com/products")
+      .get("https://modern-e-commerce-store.onrender.com/api/products")
       .then((response) => {
         setProducts(response.data);
       })
@@ -42,7 +45,10 @@ function Products() {
         <ul className="products-row1">
           <li className="product-block">
             <div className="product-image-and-price">
-              <img src="oshin-khandelwal-fq839fSNEuo-unsplash.png" />
+              <img
+                src="oshin-khandelwal-fq839fSNEuo-unsplash.png"
+                alt="Product"
+              />
               <p className="product-price font-face-te">$160</p>
             </div>
             <p className="product-title">mammoth bundle</p>
@@ -53,13 +59,17 @@ function Products() {
 
           <li className="product-block">
             <div className="product-image-and-price mammoth-bundle-block">
-              <div key={products._id}>
-                <h2>{products.name}</h2>
-                <Link to={`/products/${products._name}`}>View Details</Link>
+              <div>
+                <h2>{products._id}</h2>
+                <Link
+                  to={`https://modern-e-commerce-store.onrender.com/api/products/6527a7d5a68a278ea111a6dd`}
+                >
+                  View Details
+                </Link>
                 {/* This is where I add more product information */}
               </div>
               <Link to="/product-listing">
-                <img src="pexels-vlada-karpovich-7902913.png" />
+                <img src="pexels-vlada-karpovich-7902913.png" alt="Product" />
               </Link>
               <p className="product-price font-face-te">$72</p>
             </div>
@@ -67,12 +77,14 @@ function Products() {
             <button>Add to Cart</button>
           </li>
 
-
           {/* -------------------------------------------------- */}
 
           <li className="product-block">
             <div className="product-image-and-price">
-              <img src="jaikishan-patel-yS960iAbSqo-unsplash.png" />
+              <img
+                src="jaikishan-patel-yS960iAbSqo-unsplash.png"
+                alt="Product"
+              />
               <p className="product-price font-face-te">$56</p>
             </div>
             <p className="product-title">mint jug vase</p>
@@ -86,7 +98,7 @@ function Products() {
         <ul className="products-row2">
           <li className="product-block">
             <div className="product-image-and-price">
-              <img src="andrew-petrov-hopnkQoC0dg-unsplash.png" />
+              <img src="andrew-petrov-hopnkQoC0dg-unsplash.png" alt="Product" />
               <p className="product-price font-face-te">$40</p>
             </div>
             <p className="product-title">pinky hands</p>
@@ -94,7 +106,10 @@ function Products() {
           </li>
           <li className="product-block">
             <div className="product-image-and-price">
-              <img src="franco-antonio-giovanella-bodma3C2GHE-unsplash.png" />
+              <img
+                src="franco-antonio-giovanella-bodma3C2GHE-unsplash.png"
+                alt="Product"
+              />
               <p className="product-price font-face-te">$48</p>
             </div>
             <p className="product-title">incense holder hand</p>
@@ -102,7 +117,7 @@ function Products() {
           </li>
           <li className="product-block">
             <div className="product-image-and-price">
-              <img src="allison-saeng-WO7nL4oLdP4-unsplash.png" />
+              <img src="allison-saeng-WO7nL4oLdP4-unsplash.png" alt="Product" />
               <p className="product-price font-face-te">$64</p>
             </div>
             <p className="product-title">arched sculpture set</p>

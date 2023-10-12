@@ -27,3 +27,6 @@ function App() {
 }
 
 export default App;
+
+// https://modern-e-commerce-store.onrender.com
+// https://modern-e-commerce-store.onrender.com/api/products
