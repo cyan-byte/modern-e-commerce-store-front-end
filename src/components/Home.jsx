@@ -33,12 +33,14 @@ function Home() {
         {/* Product 2 */}
         <div className="product-home">
           <div className="product-home-image-and-price">
-            <img
-              src="pexels-vlada-karpovich-7902913.png"
-              alt="Product 2"
-              className="product-home-image"
-              style={{ width: "154px", height: "268px" }}
-            />
+            <Link to="/product-listing">
+              <img
+                src="pexels-vlada-karpovich-7902913.png"
+                alt="Product 2"
+                className="product-home-image"
+                style={{ width: "154px", height: "268px" }}
+              />
+            </Link>
             <p className="product-home-price">$72</p>
           </div>
           <div className="product-home-details">
@@ -68,11 +70,14 @@ function Home() {
             <h1>clayday collection</h1>
             <p>
               Earthy, “unfinished” vibes from sculptures to vases in raw earthy
-              hues. See the full collection.
+              hues. <span>See the full collection.</span>
             </p>
           </div>
           <div className="clayday-bottom">
-            <p>starting at $48</p>
+            <p>
+              starting at{" "}
+              <span className="starting-at-price font-face-te">$48</span>
+            </p>
           </div>
         </div>
         <img
@@ -93,12 +98,15 @@ function Home() {
         </div>
         <div className="rali-right">
           <p className="rali-top">
-            Our Rali vase collection comes in differing heights and widths for
+            Our <span>Rali vase collection</span> comes in differing heights and widths for
             your choosing. Style tip: Add one empty vase to the top of a
             wardrobe on the left side of your room and one of our sculptures to
             the top of a matching wardrobe on the right side of your room.
           </p>
-          <p className="rali-bottom">starting at $56</p>
+          <p className="rali-bottom">
+            starting at
+            <span className="starting-at-price font-face-te">$56</span>
+          </p>
         </div>
       </div>
       <div className="blue-see-products-section">

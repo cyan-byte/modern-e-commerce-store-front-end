@@ -1,21 +1,22 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 
-export default function Footer() {
+export default function NavBar() {
   return (
-    <nav className="footer">
-      <ul className="footer-navbar-list">
+    <nav className="navbar font-face-pdr">
+      <ul className="navbar-list">
         <li>
           <Link to="/">
-            <img src="talon-logo-light.png" alt="Talon logo" />
+            <img src="talon-logo.png" alt="Talon logo" />
           </Link>
         </li>
         <li>
           <Link to="/">HOME</Link>
         </li>
-        <li>
-          <Link to="/products">PRODUCTS</Link>
-        </li>
+        <li className="nav-indicator">
+            <Link to="/products">PRODUCTS</Link>
+            <div className="page-indicator"></div>
+          </li>
         <li>
           <Link to="/artisanbios">ARTISAN BIOS</Link>
         </li>
@@ -24,8 +25,8 @@ export default function Footer() {
             <img src="shopping-bag-icon.png" alt="shopping bag icon" />
           </Link>
         </li>
-        <li>Designed by Alisha Upton</li>
       </ul>
     </nav>
   );
 }
+

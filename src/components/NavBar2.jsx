@@ -23,7 +23,7 @@ export default function NavBar() {
   }, []); // Empty dependency array to run the effect only once
 
   return (
-    <nav className={`navbar ${showLogo ? "show-logo" : ""}`}>
+    <nav className={`navbar font-face-pdr ${showLogo ? "show-logo" : " font-face-pdr"}`}>
       <ul className="navbar-list">
         <li>
           <Link to="/">
@@ -34,8 +34,9 @@ export default function NavBar() {
             />
           </Link>
         </li>
-        <li>
+        <li className="nav-indicator">
           <Link to="/">HOME</Link>
+          <div className="page-indicator"></div>
         </li>
         <li>
           <Link to="/products">PRODUCTS</Link>

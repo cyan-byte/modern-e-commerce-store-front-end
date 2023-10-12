@@ -1,16 +1,16 @@
 import React from "react";
 import Footer from "./Footer";
-import NavBar from "./NavBar";
+import ArtisanNav from "./ArtisanNav";
 
 export default function ArtisanBios() {
   return (
     <div>
-      <NavBar />
+      <ArtisanNav />
       <div className="artisan-container">
         <div className="artisan-header">
           <img src="artisan-bios-text.png" />
         </div>
-        <div className="artisan-block">
+        <div className="artisan-block font-face-pdr">
           <h2 className="artisan-left">Meet Dahlia Blue</h2>
           <img src="pexels-rfstudio-3817495.jpg" className="artisan-image" />
         </div>
@@ -23,11 +23,16 @@ export default function ArtisanBios() {
             Perspiciatis molestiae officia, vitae error amet illo iste repellat
             ipsa, iusto et nisi. Veritatis, aperiam!
           </div>
+
+          <div className="artisan-quote1">
+          <p>
+            "My entire <span className="heart">heart</span> goes into my pottery work."
+          </p>
+          </div>
         </div>
-        <p>"My entire heart goes into my pottery work."</p>
       </div>
 
-      <div className="artisan-block">
+      <div className="artisan-block font-face-pdr">
         <h2 className="artisan-left">Kaji Dolovi</h2>
         <img src="pexels-rfstudio-3819794.jpg" className="artisan-image" />
       </div>
@@ -40,10 +45,12 @@ export default function ArtisanBios() {
           molestiae officia, vitae error amet illo iste repellat ipsa, iusto et
           nisi. Veritatis, aperiam!
         </div>
-        <p>"I asked myself, 'What can be created today?'."</p>
+        <div className="artisan-quote2">
+          <p>"I asked myself, 'What can be created today?'."</p>
+        </div>
       </div>
 
-      <div className="artisan-block">
+      <div className="artisan-block font-face-pdr">
         <h2 className="artisan-left">Meet Natasha D.</h2>
         <img
           src="pexels-antoni-shkraba-4706134.jpg"
@@ -59,8 +66,11 @@ export default function ArtisanBios() {
           molestiae officia, vitae error amet illo iste repellat ipsa, iusto et
           nisi. Veritatis, aperiam!
         </div>
+
+        <div className="artisan-quote3">
+          <p>"It's all about the movement and the peace."</p>
+        </div>
       </div>
-      <p>"It's all about the movement and the peace."</p>
 
       <Footer />
     </div>

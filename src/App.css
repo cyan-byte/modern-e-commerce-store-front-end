@@ -1,5 +1,14 @@
 .App {
   font-family: "Pridi-Regular", serif;
+  width: 100%;
+}
+
+.font-face-pdr {
+  font-family: "PridiRegular";
+}
+
+.font-face-te {
+  font-family: "TartlersEnd";
 }
 
 .navbar {
@@ -11,8 +20,26 @@
   z-index: 100;
 }
 
+.navbar a {
+  color: #000000;
+}
+
+.nav-indicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-indicator {
+  border: solid 0.5px #000000;
+  background-color: #f4f66d;
+  height: 5px;
+  width: 40px;
+}
+
 .logo {
-  opacity: 0; /* Initially hide the logo */
+  opacity: 0; /* Initially hide the logo (still there, just hidden)*/
   transition: opacity 0.3s ease;
 }
 
@@ -47,6 +74,7 @@ a {
   flex-wrap: wrap;
   width: 100vw;
   height: 50vh;
+  margin-top: -20px;
 }
 
 .product-home {
@@ -86,6 +114,17 @@ a {
   border-bottom: solid 0.5px #000000;
 }
 
+.clayday-bottom p {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 1.4rem;
+}
+
+.starting-at-price {
+  font-size: 2.4rem;
+}
+
 .clayday-left {
   width: fill;
 }
@@ -105,8 +144,17 @@ a {
 }
 
 .clayday-top p {
-  max-width: 300px;
+  max-width: 464px;
   font-size: 1.2rem;
+}
+
+.clayday-top h1 {
+  font-size: 3rem;
+  margin: -16px;
+}
+
+.clayday-top span {
+  text-decoration: underline;
 }
 
 .clayday-bottom {
@@ -136,12 +184,20 @@ a {
   height: 88vh;
 }
 .rali-top {
-  font-size: 1rem;
-  max-width: 400px;
+  font-size: 1.3rem;
+  max-width: 548px;
+}
+
+.rali-top span {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .rali-bottom {
-  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 1.4rem;
 }
 
 .blue-see-products-section {
@@ -150,7 +206,6 @@ a {
   justify-content: center;
   align-items: center;
   font-size: 3.2rem;
-  font-weight: 700;
   width: 100vw;
   height: 88vh;
   background-color: #c7d1d6;
@@ -161,7 +216,8 @@ a {
   background-color: #f4f66d;
   color: #000000;
   border: 0.5px solid #000000;
-  padding: 10px 24px;
+  padding: 8px 48px;
+  margin-top: -24px;
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
@@ -205,6 +261,10 @@ button {
   color: #fff8e1;
   width: 100vw;
   font-size: 1rem;
+}
+
+.footer a {
+  color: #fff8e1;
 }
 
 .footer-navbar-list {
@@ -277,11 +337,15 @@ button {
   font-weight: 700;
   text-align: center;
   position: absolute;
+  margin-top: -29px;
+  margin-left: 10%;
 }
 
+.featured-header {
+  text-align: center;
+}
 .featured-products {
   display: flex;
-  border: solid 0.5px #000000;
 }
 
 .featured-block {
@@ -313,6 +377,12 @@ button {
 .product-listing-right p {
   font-size: 2rem;
   max-width: 400px;
+}
+
+.product-listing-right h2 {
+  font-size: 2.4rem;
+  margin-top: -32px;
+  margin-bottom: 0;
 }
 
 .listing-add-to-cart-button {
@@ -376,14 +446,20 @@ button {
 }
 
 .artisan-block {
-display: flex;
+  display: flex;
+  border: solid 0.5px #000000;
 }
 
 .artisan-image {
   height: 156vh;
+  border-left: solid 0.5px #000000;
 }
+
 .artisan-para-quote {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32vh;
 }
 
 .artisan-left {
@@ -392,18 +468,55 @@ display: flex;
   align-items: center;
 }
 .artisan-para1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  height: 32vh;
   background-color: #c7d1d6;
+}
+
+.heart {
+  font-weight: 600;
+}
+
+.artisan-quote1 {
+  font-size: 2.4rem;
+  background-color: #c7d1d6;
+  width: 50%;
+  height: 32vh;
+}
+
+.artisan-quote2 {
+  font-size: 2.4rem;
+  background-color: #dbd0d4;
+  width: 50%;
+  max-width: 480px;
+  height: 32vh;
+}
+
+.artisan-quote3 {
+  font-size: 2.4rem;
+  background-color: #d69585;
   height: 32vh;
 }
 
 .artisan-para2 {
-  background-color: #dbd0d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
   height: 32vh;
+  background-color: #dbd0d4;
 }
 
 .artisan-para3 {
-  background-color: #d69585;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
   height: 32vh;
+  background-color: #d69585;
 }
 
 .artisan-block h2 {

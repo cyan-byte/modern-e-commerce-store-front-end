@@ -1,44 +1,35 @@
 import React, { useState, useEffect } from "react";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 
 export default function ProductListing() {
-  const [products, setProducts] = useState([]);
+  const [product, setProduct] = useState(null);
+  const { productId } = useParams();
 
   useEffect(() => {
-    // This fetches products from my server
+    // This fetches products from my server using axios
     async function fetchProducts() {
       try {
-        const response = await fetch("/api/products"); // match this with server.js
-        if (response.ok) {
-          const data = await response.json();
-          setProducts(data);
+        const response = await axios.get(`/api/productDetail/${productId}`); // Make an API request for a specific product
+        if (response.status === 200) {
+          setProduct(response.data);
         } else {
-          console.error("Failed to fetch products");
+          console.error("Failed to fetch product details");
         }
       } catch (error) {
         console.error(error);
       }
     }
     fetchProducts();
-  }, []);
-  
+  }, [productId]);
+
   // displays products
   return (
     <div>
       <NavBar />
-      <div>
-      <h1>Product Listing</h1>
-      {products.map((product) => (
-        <div key={product._id}>
-          <h2>{product.name}</h2>
-          <img src={product.image} alt={product.name} />
-          <p>Price: ${product.price}</p>
-          <p>{product.details}</p>
-        </div>
-      ))}
-    </div>
-      {/* <div className="product-listing-container">
+      <div className="product-listing-container">
         <header className="bold-product-name">MAMMOTH VASE</header>
         <div className="listing-image-and-details">
           <div className="product-listing-left">
@@ -54,9 +45,16 @@ export default function ProductListing() {
               indoor & outdoor use
             </p>
             <h2>$72</h2>
+            <div>color:</div>
+            <div>details +</div>
+            <p>Product ID: {productId}</p>
+
             <div className="listing-add-to-cart-button">Add to Cart</div>
           </div>
         </div>
+
+        {/* ------------------------------------------- */}
+        <p className="featured-header">Featured Items</p>
         <div className="featured-products">
           <div className="featured-block">
             <img src="pexels-andre-william-3010771.png" />
@@ -71,7 +69,7 @@ export default function ProductListing() {
             <p>Mammoth Bundle</p>
           </div>
         </div>
-      </div> */}
+      </div>
       <Footer />
     </div>
   );
