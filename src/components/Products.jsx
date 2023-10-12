@@ -55,7 +55,7 @@ function Products() {
             <div className="product-image-and-price mammoth-bundle-block">
               <div key={products._id}>
                 <h2>{products.name}</h2>
-                <Link to={`/products/${products._id}`}>View Details</Link>
+                <Link to={`/products/${products._name}`}>View Details</Link>
                 {/* This is where I add more product information */}
               </div>
               <Link to="/product-listing">
@@ -67,16 +67,6 @@ function Products() {
             <button>Add to Cart</button>
           </li>
 
-          {/* <li className="product-block">
-            <div className="product-image-and-price">
-              <Link to="/product-listing">
-                <img src="pexels-vlada-karpovich-7902913.png" />
-              </Link>
-              <p className="product-price font-face-te">$72</p>
-            </div>
-            <p className="product-title">mammoth vase</p>
-            <button>Add to Cart</button>
-          </li> */}
 
           {/* -------------------------------------------------- */}
 
