@@ -5,36 +5,36 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 
 export default function ProductListing() {
-  const [product, setProduct] = useState(null);
-  const { productId } = useParams();
+  // const [product, setProduct] = useState(null);
+  // const { productId } = useParams();
 
-  useEffect(() => {
-    // This fetches products from my server using axios
-    async function fetchProducts() {
-      try {
-        const response = await axios.get(
-          "https://modern-e-commerce-store.onrender.com/api/productDetail/" +
-            productId
-        );
-        if (response.status === 200) {
-          setProduct(response.data);
-        } else {
-          console.error("Failed to fetch product details");
-        }
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    fetchProducts();
-  }, [productId]);
+  // useEffect(() => {
+  //   // This fetches products from my server using axios
+  //   async function fetchProducts() {
+  //     try {
+  //       const response = await axios.get(
+  //         "https://modern-e-commerce-store.onrender.com/api/productDetail/" +
+  //           productId
+  //       );
+  //       if (response.status === 200) {
+  //         setProduct(response.data);
+  //       } else {
+  //         console.error("Failed to fetch product details");
+  //       }
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   }
+  //   fetchProducts();
+  // }, [productId]);
 
-  const addToCart = () => {
-    if (product) {
-      const updatedCart = [...cart, product];
-      setCart(updatedCart);
+  // const addToCart = () => {
+  //   if (product) {
+  //     const updatedCart = [...cart, product];
+  //     setCart(updatedCart);
 
-    }
-  };
+  //   }
+  // };
 
   // displays products
   return (
