@@ -58,11 +58,9 @@ export default function ProductListing() {
             <h2>$72</h2>
             <div>color:</div>
             <div>details +</div>
-            <p>Product ID: {productId}</p>
+            <p>Product ID:</p>
 
-            <div className="listing-add-to-cart-button" onClick={addToCart}>
-              Add to Cart
-            </div>
+            <div className="listing-add-to-cart-button">Add to Cart</div>
           </div>
         </div>
 
