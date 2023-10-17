@@ -61,11 +61,6 @@ function Products() {
             <div className="product-image-and-price mammoth-bundle-block">
               <div>
                 <h2>{products._id}</h2>
-                <Link
-                  to={`https://modern-e-commerce-store.onrender.com/api/products/6527a7d5a68a278ea111a6dd`}
-                >
-                  View Details
-                </Link>
                 {/* This is where I add more product information */}
               </div>
               <Link to="/product-listing">

@@ -23,7 +23,6 @@ function Home() {
               src="oshin-khandelwal-fq839fSNEuo-unsplash.png"
               alt="Product 1"
               className="product-home-image"
-              style={{ width: "256px", height: "260px" }}
             />
             <p className="product-home-price">$160</p>
           </div>
@@ -37,15 +36,12 @@ function Home() {
               <img
                 src="pexels-vlada-karpovich-7902913.png"
                 alt="Product 2"
-                className="product-home-image"
-                style={{ width: "154px", height: "268px" }}
+                className="product-home-image product-home-image2"
               />
             </Link>
             <p className="product-home-price">$72</p>
           </div>
-          <div className="product-home-details">
-            <h3 className="product-home-title">mammoth vase</h3>
-          </div>
+          <h3 className="product-home-title">mammoth vase</h3>
         </div>
 
         {/* Product 3 */}
@@ -54,14 +50,12 @@ function Home() {
             <img
               src="jaikishan-patel-yS960iAbSqo-unsplash.png"
               alt="Product 3"
-              className="product-home-image"
-              style={{ width: "144px", height: "277px" }}
+              className="product-home-image product-home-image3"
             />
             <p className="product-home-price">$56</p>
           </div>
-          <div className="product-home-details">
-            <h3 className="product-home-title">mint jug vase</h3>
-          </div>
+
+          <h3 className="product-home-title">mint jug vase</h3>
         </div>
       </div>
       <div className="clayday-section">
